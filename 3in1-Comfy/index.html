@@ -72,7 +72,7 @@
 
         /* Slide 2 - Product Overview */
         .slide-2 {
-            background: #f8f8f8;
+            background: white;
         }
 
         .slide-2 .section-title {
@@ -123,9 +123,9 @@
             margin-bottom: 10px;
         }
 
-        /* Slide 3 - Available Options */
+        /* Slide 4 - Available Options */
         .slide-3 {
-            background: #e8f0f5;
+            background: white;
         }
 
         .slide-3 .section-title {
@@ -223,9 +223,9 @@
             color: #000;
         }
 
-        /* Slide 5 - Eco-Friendly by Design */
+        /* Slide 6 - Eco-Friendly by Design */
         .slide-5 {
-            background: #f0f0f0;
+            background: white;
         }
 
         .slide-5 .section-title {
@@ -270,9 +270,9 @@
             margin-top: 20px;
         }
 
-        /* Slide 6 - Transform Blanket into Gift */
+        /* Slide 7 - Transform Blanket into Gift */
         .slide-6 {
-            background: white;
+            background: #e8f0f5;
         }
 
         .slide-6 .section-title {
@@ -325,9 +325,9 @@
             font-size: 24px;
         }
 
-        /* Slide 7 - Smart Design */
+        /* Slide 8 - Smart Design */
         .slide-7 {
-            background: #e8f0f5;
+            background: white;
         }
 
         .slide-7 .section-title {
@@ -379,9 +379,9 @@
             grid-column: 1 / -1;
         }
 
-        /* Slide 8 - Secure Adjustable */
+        /* Slide 9 - Secure Adjustable */
         .slide-8 {
-            background: white;
+            background: #e8f0f5;
         }
 
         .slide-8 .section-title {
@@ -431,9 +431,9 @@
             color: #333;
         }
 
-        /* Slide 9 - Sustainability */
+        /* Slide 10 - Sustainability */
         .slide-9 {
-            background: #e8f0f5;
+            background: white;
         }
 
         .slide-9 .section-title {
@@ -553,6 +553,10 @@
             margin-bottom: 40px;
         }
 
+        .slide-12 {
+            background: #e8f0f5;
+        }
+
         .slide-12 .section-title {
             font-size: 48px;
             font-weight: bold;
@@ -640,6 +644,60 @@
             font-size: 14px;
         }
 
+        /* Slide Videos - Product Videos */
+        .slide-videos {
+            background: #e8f0f5;
+        }
+
+        .slide-videos .section-title {
+            font-size: 48px;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 40px;
+        }
+
+        .slide-videos .videos-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            align-items: start;
+        }
+
+        .slide-videos .video-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .slide-videos .video-item video {
+            width: 100%;
+            max-height: 520px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            background: #000;
+        }
+
+        .slide-videos .video-caption {
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #1a4d7a;
+            text-align: center;
+        }
+
+        .slide-videos .video-desc {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+        }
+
+        @media (max-width: 900px) {
+            .slide-videos .videos-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
         @media print {
             body {
                 background: white;
@@ -689,7 +747,35 @@
             </div>
         </div>
 
-        <!-- Slide 3: Available Options -->
+        <!-- Slide 3: Product Videos -->
+        <div class="slide slide-videos">
+            <div class="section-title">Product Videos</div>
+            <div class="videos-grid">
+                <div class="video-item">
+                    <video controls poster="vedio/1.jpg">
+                        <source src="vedio/1.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-caption">Disposable Version</div>
+                    <div class="video-desc">Gift-ready, costs less than per-wash</div>
+                </div>
+                <div class="video-item">
+                    <video controls poster="vedio/2.jpg">
+                        <source src="vedio/2.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-caption">Rotatable Version</div>
+                    <div class="video-desc">30+ wash cycles, premium polar fleece</div>
+                </div>
+                <div class="video-item">
+                    <video controls poster="vedio/3.jpg">
+                        <source src="vedio/3.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-caption">For Sale Version</div>
+                    <div class="video-desc">Retail $35-45, comfort that flies home</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Available Options -->
         <div class="slide slide-3">
 
             <div class="section-title">Available Options</div>
@@ -705,7 +791,13 @@
                 </div>
                 <div class="option-card">
                     <div class="option-title">For sale: 3-in-1 Comfy</div>
-                    <div class="option-text">Shawl/blanket, made of chenille, The airline's suggested retail price is between 30 and 35 US dollars</div>
+                    <div class="option-text" style="font-weight: bold; color: #1a4d7a;">Powered by LYCRA® & THERMOLITE® FIR</div>
+                    <div class="option-text" style="font-size: 14px; margin-top: 15px;"><strong>• Boost Circulation</strong><br>FIR increases microcirculation by up to 15% in cramped cabins</div>
+                    <div class="option-text" style="font-size: 14px;"><strong>• Deep Muscle Relief</strong><br>Far Infrared heat reduces lactic acid buildup, eases neck &amp; back stiffness</div>
+                    <div class="option-text" style="font-size: 14px;"><strong>• Ultimate Fit</strong><br>LYCRA® fiber for 360° stretch and lasting shape retention</div>
+                    <div class="option-text" style="font-style: italic; color: #1a4d7a; margin-top: 15px;">Travel light. Recover faster. Arrive refreshed.</div>
+                    <div class="option-text" style="font-size: 12px; color: #888; margin-top: 10px;">Suggested retail: $30–35</div>
+                    <div class="option-text" style="font-size: 11px; color: #aaa;">Authorized use of LYCRA® and THERMOLITE® trademarks</div>
                 </div>
             </div>
             <div class="tagline" style="font-size: 35px; color: #000;">Choose the option that fits your needs</div>
